@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".info").hide();
+            $("#bio").show();
+            $("#navBio").click(function(){
+                $(".info").slideUp();
+                $("#bio").slideDown();
+            });
+            $("#navSkills").click(function(){
+                $(".info").slideUp();
+                $("#skills").slideDown();
+            });
+            $("#navFun").click(function(){
+                $(".info").slideUp();
+                $("#fun").slideDown();
+            });
+            $("#navProjects").click(function(){
+                $(".info").slideUp();
+                $("#projects").slideDown();
+            });
+        });
+    </script>
+    <title>Stuart Yee</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="myname">
+                <img src="Yee.png" alt="Yee">
+                <h1>Stuart Yee</h1>
+            </div>
+
+            <ul>
+                <li>Email: <a href="mailto:ki6fzb@gmail.com">ki6fzb@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/stuart-yee-008a5747/" target="_blank">Stuart Yee</a>
+                </li>
+                <li>GitHub: <a href="https://github.com/Stuart-Yee" target="_blank">https://github.com/Stuart-Yee</a>
+                </li>
+            </ul>
+        </div>
+        <div id="nav">
+            <ul>
+                <li><button id="navBio">BIO</button></li>
+                <li><button id="navSkills">SKILLS</button></li>
+                <li><button id="navFun">FUN STUFF</button> </li>
+                <li><button id="navProjects">PROJECTS</button></li>
+            </ul>
+        </div>
+        <div id="body">
+            <div class="info" id="bio">
+                <img src="profilePicture.jpg" alt="Profiel Picture">
+                <div class="content">
+                    <h3>About Me...</h3>
+                    <p>My first coding experience was BASIC on an ancient Texas Instruments TI-99/4A (<a
+                            href="https://en.wikipedia.org/wiki/Texas_Instruments_TI-99/4A" target="_blank">Wiki</a>)
+                        back in the early
+                        '90s. I played around with VB4 in my spare time as a high schooler and jumped head first into
+                        C++ in my first semester in college. It was like jumping into freezing water and I noped out of
+                        there. Meanwhile, I played with Python a little in the early 2000s before the cool kids were
+                        doing it.</p>
+                    <p>Since then I've built an ecclectic work history ranging from insurance sales, to laboratory
+                        services to even entertainment! I have since returned to the coding world and here I am!</p>
+                    <p>Outside of tech and work, my interests include Dungeons and Dragons style RPGs, science, science
+                        fiction, acting, martial arts and ham radio. I'm married and a father. Enough for now because I
+                        just got an urgent call regarding my vehicle's warranty...</p>
+                </div>
+            </div>
+            <div class="info" id="skills">
+                <div id="known">
+                    <h3>Things I Know:</h3>
+                    <ul>
+                        <li><img src="HTML.png" alt="HTML" class="tech"> <span class="list-text">HTML5</span> <img
+                                src="star.png" alt="star" class="star"><img src="star.png" alt="star" class="star"><img
+                                src="star.png" alt="star" class="star"><img src="star.png" alt="star" class="star"><img
+                                src="star.png" alt="star" class="star"></li>
+                        <li><img src="CSS.png" alt="CSS" class="tech"><span class="list-text">CSS3</span> <img
+                                src="star.png" alt="star" class="star"><img src="star.png" alt="star" class="star"><img
+                                src="star.png" alt="star" class="star"></li>
+                        <li><img src="python.png" alt="Python" class="tech"><span class="list-text">Python</span> <img
+                                src="star.png" alt="star" class="star"><img src="star.png" alt="star" class="star"><img
+                                src="star.png" alt="star" class="star"><img src="star.png" alt="star" class="star"></li>
+                        <li><img src="JavaScript.png" alt="JavaScript" class="tech"><span
+                                class="list-text">JavaScript</span> <img src="star.png" alt="star" class="star"><img
+                                src="star.png" alt="star" class="star"><img src="star.png" alt="star" class="star"></li>
+                        <li><img src="java.png" alt="Java" class="tech"> <span class="list-text">Java</span> <img
+                                src="star.png" alt="star" class="star"><img src="star.png" alt="star" class="star"><img
+                                src="star.png" alt="star" class="star"></li>
+                    </ul>
+                </div>
+                <div id="learning">
+                    <h3>Things I'm Learning:</h3>
+                    <ul>
+                        <li><img src="C++.png" alt="C++" class="tech"> <span class="list-text">C++</span></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="info" id="fun">
+                <h3>Fun Silly Things I Made:</h3>
+            </div>
+            <div class="info" id="projects">
+                <h3>Projects</h3>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>

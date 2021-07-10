@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 980px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.name {
+    font-family: itim;
+}
+
+.tagline {
+    background-color: transparent;
+    background-image: inherit;
+    color: black;
+}
+
+.main {
+    height: 900px;
+    background-image: radial-gradient(rgb(111,89,100), rgb(29,13,17));
+    padding: 10px;
+}
+
+
+
+.bio {
+    height: 300px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: stretch;
+}
+
+.profilepic {
+    height: 270px;
+    border: 5px solid rgb(194, 181, 181);
+    margin: 5px;
+}
+
+.about {
+    margin: 5px;
+    height: 280px;
+}
+
+.about, .project{
+    background-image: linear-gradient(to left, rgb(219,204,218), rgb(254,254,254));
+}
+
+#projects {
+    width: 100%;
+    display: flex;
+}
+
+.project {
+    flex: 1;
+    height: auto;
+    margin: 10px;
+}
+
+h2, h3 {
+    background-color: grey;
+    background-image: linear-gradient(silver, grey, silver);
+    display: block;
+    color: white;
+    padding: 5px;
+}
+
+.technologies {
+    padding: 10px;
+}
+
+.icon {
+    display: inline-block;
+    width: 15%;
+    margin: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+p, a {
+    margin: 10px;
+    color: black;
+}
+
+.project p {
+    height: 150px;
+}
+
+.button {
+    display: block;
+    background-color: darkgreen;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    text-decoration: none;
+    margin: 2px auto;
+    box-shadow: 2px 2px 4px black;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.footer {
+    height: 50px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+#contact {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
+.socials img {
+    width: 20px;
+}
+
+.socials {
+    margin: 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
